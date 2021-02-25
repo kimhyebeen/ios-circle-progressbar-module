@@ -67,12 +67,9 @@ circleProgress.setupLabel(label)
 
 ## Properties
 * progressColor
+  + `circleProgress.progressColor = .systemBlue`
 
 <img src="./image/properties01.png" width="250" />
-
-````swift
-circleProgress.progressColor = .systemBlue
-````
 
 * trackColor
 
