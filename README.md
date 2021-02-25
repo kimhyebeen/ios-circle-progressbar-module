@@ -68,41 +68,20 @@ circleProgress.setupLabel(label)
 ## Properties
 * progressColor
   + `circleProgress.progressColor = .systemBlue`
-
-<img src="./image/properties01.png" width="250" />
-
+  + <img src="./image/properties01.png" width="250" />
 * trackColor
-
-<img src="./image/properties02.png" width="250" />
-
-````swift
-circleProgress.trackColor = .systemBlue
-````
-
+  + `circleProgress.trackColor = .systemBlue`
+  + <img src="./image/properties02.png" width="250" />
 * fillColor
-
-<img src="./image/properties03.png" width="250" />
-
-````swift
-circleProgress.fillColor = .systemYellow
-````
-
+  + `circleProgress.fillColor = .systemYellow`
+  + <img src="./image/properties03.png" width="250" />
 * progressLineWidth
-
-<img src="./image/properties04.png" width="250" />
-
-````swift
-circleProgress.progressLineWidth = 9.0
-````
-
+  + `circleProgress.progressLineWidth = 9.0`
+  + <img src="./image/properties04.png" width="250" />
 * progressLineWidth & trackLineWidth
-
-<img src="./image/properties05.png" width="250" />
-
-````swift
-circleProgress.trackLineWidth = 10.0
-circleProgress.progressLineWidth = 10.0
-````
+  + `circleProgress.trackLineWidth = 10.0`
+  + `circleProgress.progressLineWidth = 10.0`
+  + <img src="./image/properties05.png" width="250" />
 
  <br />
 
