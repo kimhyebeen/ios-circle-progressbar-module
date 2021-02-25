@@ -56,11 +56,21 @@ open class ChloeCircleProgress: UIView {
     }
     
     open func setupLabel(_ label: UILabel) {
+        self.addSubview(label)
         
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        label.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     }
     
     open func setProgress(value: Float, duration: Double = 1.0) {
-        
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.duration = duration
+        animation.fromValue = 0
+        animation.toValue = value
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        progressLayer.strokeEnd = CGFloat(value)
+        progressLayer.add(animation, forKey: "animateprogress")
     }
 
 }
