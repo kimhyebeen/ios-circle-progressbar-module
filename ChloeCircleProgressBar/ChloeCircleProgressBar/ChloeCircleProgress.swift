@@ -42,5 +42,13 @@ open class ChloeCircleProgress: UIView {
     private func setupView() {
         
     }
+    
+    open func setupLabel(_ label: UILabel) {
+        
+    }
+    
+    open func setProgress(value: Float, duration: Double = 1.0) {
+        
+    }
 
 }
