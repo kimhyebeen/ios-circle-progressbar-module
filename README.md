@@ -16,6 +16,8 @@ $ cd (your project)
 $ git submodule add https://github.com/kimhyebeen/ios-submodule-circle-progress-bar.git
 ````
 
+<br />
+
 * Add this module in your xcode **(target > General > Frameworks, Libraries, and Embedded Content)**
 <img src="./image/installation01.png" width="600" />
 <img src="./image/installation02.png" width="400" />
@@ -30,10 +32,14 @@ $ git submodule add https://github.com/kimhyebeen/ios-submodule-circle-progress-
 import ChloeCircleProgressBar
 ````
 
+<br />
+
 * create a property for CircleProgressBar
 ````swift
 let circleProgress = ChloeCircleProgress(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
 ````
+
+<br />
 
 * setting the progress value in your `ChloeCircleProgress`.
 
@@ -49,6 +55,8 @@ circleProgress.heightAnchor.constraint(equalToConstant: 60).isActive = true
 circleProgress.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -40).isActive = true
 circleProgress.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
 ````
+
+<br />
 
 * you can add a label in your `ChloeCircleProgress`.
 
