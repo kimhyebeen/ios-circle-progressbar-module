@@ -1,4 +1,4 @@
-# ios-submodule-circle-progress-bar
+# ChloeCircleProgressBar
 This is a iOS submodule for Circle Progress Bar. The circle progress bar can display the percentage of some missions using the circle bar.
 
 ## Requirements
