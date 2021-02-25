@@ -11,10 +11,10 @@ open class ChloeCircleProgress: UIView {
     private var progressLayer = CAShapeLayer()
     private var trackLayer = CAShapeLayer()
     
-    open var progressColor = UIColor.systemGreen {
+    open var progressColor = UIColor.systemPink {
         didSet { progressLayer.strokeColor = progressColor.cgColor }
     }
-    open var trackColor = UIColor.systemGray2 {
+    open var trackColor = UIColor.systemGray4 {
         didSet { trackLayer.strokeColor = trackColor.cgColor }
     }
     open var fillColor = UIColor.clear {
