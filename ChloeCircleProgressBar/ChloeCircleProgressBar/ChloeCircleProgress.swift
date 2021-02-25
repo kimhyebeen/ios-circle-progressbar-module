@@ -18,13 +18,13 @@ open class ChloeCircleProgress: UIView {
         didSet { trackLayer.strokeColor = trackColor.cgColor }
     }
     open var fillColor = UIColor.clear {
-        didSet { trackLayer.fillColor = oldValue.cgColor }
+        willSet { progressLayer.fillColor = newValue.cgColor }
     }
     open var progressLineWidth: CGFloat = 5.0 {
-        didSet { progressLayer.lineWidth = oldValue }
+        willSet { progressLayer.lineWidth = newValue }
     }
     open var trackLineWidth: CGFloat = 5.0 {
-        didSet { trackLayer.lineWidth = oldValue }
+        willSet { trackLayer.lineWidth = newValue }
     }
 
     public override init(frame: CGRect) {
@@ -78,7 +78,7 @@ open class ChloeCircleProgress: UIView {
 extension ChloeCircleProgress {
     private func makeTrackLayer(_ circlePath: UIBezierPath) {
         trackLayer.path = circlePath.cgPath
-        trackLayer.fillColor = self.fillColor.cgColor
+        trackLayer.fillColor = UIColor.clear.cgColor
         trackLayer.strokeColor = self.trackColor.cgColor
         trackLayer.lineWidth = self.trackLineWidth
         trackLayer.strokeEnd = 1.0
@@ -87,7 +87,7 @@ extension ChloeCircleProgress {
     
     private func makeProgressLayer(_ circlePath: UIBezierPath) {
         progressLayer.path = circlePath.cgPath
-        progressLayer.fillColor = UIColor.clear.cgColor
+        progressLayer.fillColor = self.fillColor.cgColor
         progressLayer.strokeColor = self.progressColor.cgColor
         progressLayer.lineCap = .round
         progressLayer.lineWidth = self.progressLineWidth
