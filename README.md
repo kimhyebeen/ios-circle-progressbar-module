@@ -64,6 +64,51 @@ circleProgress.setupLabel(label)
 
  <br />
 
+
+## Properties
+* progressColor
+
+<img src="./image/properties01.png" width="250" />
+
+````swift
+circleProgress.progressColor = .systemBlue
+````
+
+* trackColor
+
+<img src="./image/properties02.png" width="250" />
+
+````swift
+circleProgress.trackColor = .systemBlue
+````
+
+* fillColor
+
+<img src="./image/properties03.png" width="250" />
+
+````swift
+circleProgress.fillColor = .systemYellow
+````
+
+* progressLineWidth
+
+<img src="./image/properties04.png" width="250" />
+
+````swift
+circleProgress.progressLineWidth = 9.0
+````
+
+* progressLineWidth & trackLineWidth
+
+<img src="./image/properties05.png" width="250" />
+
+````swift
+circleProgress.trackLineWidth = 10.0
+circleProgress.progressLineWidth = 10.0
+````
+
+ <br />
+
 ## References
 * [Git submodule 써보기 + 삭제하는 법](https://zeddios.tistory.com/704)
 * [Git submodule 사용하기](https://pinedance.github.io/blog/2019/05/28/Git-Submodule)
