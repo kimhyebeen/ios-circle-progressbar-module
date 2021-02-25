@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EEE5540825E7E024003A7166 /* ChloeCircleProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE5540625E7E024003A7166 /* ChloeCircleProgressBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEE5541025E7E31C003A7166 /* ChloeCircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5540F25E7E31C003A7166 /* ChloeCircleProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEE5540325E7E024003A7166 /* ChloeCircleProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChloeCircleProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE5540625E7E024003A7166 /* ChloeCircleProgressBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChloeCircleProgressBar.h; sourceTree = "<group>"; };
 		EEE5540725E7E024003A7166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE5540F25E7E31C003A7166 /* ChloeCircleProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChloeCircleProgress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				EEE5540625E7E024003A7166 /* ChloeCircleProgressBar.h */,
 				EEE5540725E7E024003A7166 /* Info.plist */,
+				EEE5540F25E7E31C003A7166 /* ChloeCircleProgress.swift */,
 			);
 			path = ChloeCircleProgressBar;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					EEE5540225E7E024003A7166 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE5541025E7E31C003A7166 /* ChloeCircleProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		EEE5540C25E7E024003A7166 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.khb.ChloeCircleProgressBar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		EEE5540D25E7E024003A7166 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
