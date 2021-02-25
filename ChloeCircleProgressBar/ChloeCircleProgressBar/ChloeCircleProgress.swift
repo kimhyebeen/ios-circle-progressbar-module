@@ -62,4 +62,14 @@ extension ChloeCircleProgress {
         trackLayer.strokeEnd = 1.0
         layer.addSublayer(trackLayer)
     }
+    
+    func makeProgressLayer(_ circlePath: UIBezierPath) {
+        progressLayer.path = circlePath.cgPath
+        progressLayer.fillColor = UIColor.clear.cgColor
+        progressLayer.strokeColor = self.progressColor.cgColor
+        progressLayer.lineCap = .round
+        progressLayer.lineWidth = self.progressLineWidth
+        progressLayer.strokeEnd = 0.0
+        layer.addSublayer(progressLayer)
+    }
 }
