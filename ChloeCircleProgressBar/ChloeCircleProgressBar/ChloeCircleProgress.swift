@@ -40,7 +40,19 @@ open class ChloeCircleProgress: UIView {
     }
     
     private func setupView() {
+        let frameWidth = frame.size.width
+        layer.cornerRadius = frameWidth / 2
         
+        let circlePath = UIBezierPath(
+            arcCenter: CGPoint(x: frameWidth/2, y: frameWidth/2),
+            radius: (frameWidth - 1.5)/2,
+            startAngle: CGFloat(-0.5 * .pi),
+            endAngle: CGFloat(1.5 * .pi),
+            clockwise: true
+        )
+        
+        makeTrackLayer(circlePath)
+        makeProgressLayer(circlePath)
     }
     
     open func setupLabel(_ label: UILabel) {
@@ -54,7 +66,7 @@ open class ChloeCircleProgress: UIView {
 }
 
 extension ChloeCircleProgress {
-    func makeTrackLayer(_ circlePath: UIBezierPath) {
+    private func makeTrackLayer(_ circlePath: UIBezierPath) {
         trackLayer.path = circlePath.cgPath
         trackLayer.fillColor = self.fillColor.cgColor
         trackLayer.strokeColor = self.trackColor.cgColor
@@ -63,7 +75,7 @@ extension ChloeCircleProgress {
         layer.addSublayer(trackLayer)
     }
     
-    func makeProgressLayer(_ circlePath: UIBezierPath) {
+    private func makeProgressLayer(_ circlePath: UIBezierPath) {
         progressLayer.path = circlePath.cgPath
         progressLayer.fillColor = UIColor.clear.cgColor
         progressLayer.strokeColor = self.progressColor.cgColor
