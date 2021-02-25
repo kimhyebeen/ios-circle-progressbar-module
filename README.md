@@ -1,8 +1,12 @@
 # ChloeCircleProgressBar
 This is a iOS submodule for Circle Progress Bar. The circle progress bar can display the percentage of some missions using the circle bar.
 
+ 
+
 ## Requirements
 * iOS 13.0
+
+ 
 
 ## Installation
 * move to your xcode project file.
@@ -13,10 +17,12 @@ $ git submodule add https://github.com/kimhyebeen/ios-submodule-circle-progress-
 ````
 
 * Add this module in your xcode (target > General > Frameworks, Libraries, and Embedded Content)
-<img src="./image/installation01.png" width="400" />
-<img src="./image/installation02.png" width="300" />
-<img src="./image/installation03.png" width="400" />
-<img src="./image/installation04.png" width="300" />
+<img src="./image/installation01.png" width="600" />
+<img src="./image/installation02.png" width="400" />
+<img src="./image/installation03.png" width="600" />
+<img src="./image/installation04.png" width="400" />
+
+ 
 
 ## Usage
 * import this module.
@@ -56,6 +62,7 @@ label.textColor = .systemPink
 circleProgress.setupLabel(label)
 ````
 
+ 
 
 ## References
 * [Git submodule 써보기 + 삭제하는 법](https://zeddios.tistory.com/704)
