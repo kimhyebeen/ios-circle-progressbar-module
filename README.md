@@ -1,5 +1,5 @@
 # ChloeCircleProgressBar
-This is a iOS submodule for Circle Progress Bar. The circle progress bar can display the percentage of some missions using the circle bar.
+This is a iOS submodule for _Circle Progress Bar_. The circle progress bar can display the percentage of some missions using the circle bar.
 
  <br />
 
@@ -16,7 +16,7 @@ $ cd (your project)
 $ git submodule add https://github.com/kimhyebeen/ios-submodule-circle-progress-bar.git
 ````
 
-* Add this module in your xcode (target > General > Frameworks, Libraries, and Embedded Content)
+* Add this module in your xcode **(target > General > Frameworks, Libraries, and Embedded Content)**
 <img src="./image/installation01.png" width="600" />
 <img src="./image/installation02.png" width="400" />
 <img src="./image/installation03.png" width="600" />
@@ -35,7 +35,7 @@ import ChloeCircleProgressBar
 let circleProgress = ChloeCircleProgress(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
 ````
 
-* setting the progress value in your ChloeCircleProgress.
+* setting the progress value in your `ChloeCircleProgress`.
 
 <img src="./image/usage01.png" width="250" />
 
@@ -50,7 +50,7 @@ circleProgress.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant
 circleProgress.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
 ````
 
-* you can add a label in your ChloeCircleProgress.
+* you can add a label in your `ChloeCircleProgress`.
 
 <img src="./image/usage02.png" width="250" />
 
