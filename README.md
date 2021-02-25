@@ -4,7 +4,7 @@ This is a iOS submodule for _Circle Progress Bar_. The circle progress bar can d
  <br />
 
 ## Requirements
-* iOS 13.0
+* iOS 13.0 ~
 
  <br />
 
@@ -100,7 +100,7 @@ circleProgress.setupLabel(label)
 
 <br />
 
-## License
+## 🚀 License
 The MIT License (MIT)
 
 Copyright (c) 2021 김혜빈 (Chloe)
