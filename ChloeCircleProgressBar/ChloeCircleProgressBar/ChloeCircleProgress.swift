@@ -20,11 +20,11 @@ open class ChloeCircleProgress: UIView {
     var fillColor = UIColor.clear {
         didSet { trackLayer.fillColor = oldValue.cgColor }
     }
-    var lineWidth: CGFloat = 5.0 {
-        didSet {
-            progressLayer.lineWidth = oldValue
-            trackLayer.lineWidth = oldValue
-        }
+    var progressLineWidth: CGFloat = 5.0 {
+        didSet { progressLayer.lineWidth = oldValue }
+    }
+    var trackLineWidth: CGFloat = 5.0 {
+        didSet { trackLayer.lineWidth = oldValue }
     }
 
     public override init(frame: CGRect) {
