@@ -17,6 +17,15 @@ open class ChloeCircleProgress: UIView {
     var trackColor = UIColor.systemGray2 {
         didSet { trackLayer.strokeColor = trackColor.cgColor }
     }
+    var fillColor = UIColor.clear {
+        didSet { trackLayer.fillColor = oldValue.cgColor }
+    }
+    var lineWidth: CGFloat = 5.0 {
+        didSet {
+            progressLayer.lineWidth = oldValue
+            trackLayer.lineWidth = oldValue
+        }
+    }
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
