@@ -52,3 +52,14 @@ open class ChloeCircleProgress: UIView {
     }
 
 }
+
+extension ChloeCircleProgress {
+    func makeTrackLayer(_ circlePath: UIBezierPath) {
+        trackLayer.path = circlePath.cgPath
+        trackLayer.fillColor = self.fillColor.cgColor
+        trackLayer.strokeColor = self.trackColor.cgColor
+        trackLayer.lineWidth = self.trackLineWidth
+        trackLayer.strokeEnd = 1.0
+        layer.addSublayer(trackLayer)
+    }
+}
