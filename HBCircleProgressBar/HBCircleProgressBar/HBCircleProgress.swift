@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class ChloeCircleProgress: UIView {
+open class HBCircleProgress: UIView {
     private var progressLayer = CAShapeLayer()
     private var trackLayer = CAShapeLayer()
     
@@ -75,7 +75,7 @@ open class ChloeCircleProgress: UIView {
 
 }
 
-extension ChloeCircleProgress {
+extension HBCircleProgress {
     private func makeTrackLayer(_ circlePath: UIBezierPath) {
         trackLayer.path = circlePath.cgPath
         trackLayer.fillColor = UIColor.clear.cgColor
