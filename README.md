@@ -1,4 +1,4 @@
-# ChloeCircleProgressBar
+# HBCircleProgressBar
 
 This is an iOS submodule for _Circle Progress Bar_. The circle progress bar can show you the percentage of some missions using the circle bar.
 
@@ -32,19 +32,19 @@ $ git submodule add https://github.com/kimhyebeen/ios-submodule-circle-progress-
 ## Usage
 * import this module.
 ````swift
-import ChloeCircleProgressBar
+import HBCircleProgressBar
 ````
 
 <br />
 
 * create a property for CircleProgressBar
 ````swift
-let circleProgress = ChloeCircleProgress(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
+let circleProgress = HBCircleProgress(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
 ````
 
 <br />
 
-* setting the progress value in your `ChloeCircleProgress`.
+* setting the progress value in your `HBCircleProgress`.
 
 <img src="./image/usage01.png" width="250" />
 
@@ -61,7 +61,7 @@ circleProgress.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, cons
 
 <br />
 
-* you can add a label in your `ChloeCircleProgress`.
+* you can add a label in your `HBCircleProgress`.
 
 <img src="./image/usage02.png" width="250" />
 
@@ -106,7 +106,7 @@ circleProgress.setupLabel(label)
 ## 🚀 License
 The MIT License (MIT)
 
-Copyright (c) 2021 김혜빈 (Chloe)
+Copyright (c) 2021 김혜빈 (HB)
 
 _Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:_
 
