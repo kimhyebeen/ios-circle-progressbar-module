@@ -23,10 +23,10 @@ $ git submodule add https://github.com/kimhyebeen/ios-submodule-circle-progress-
 <br />
 
 * Add this module in your xcode **(target > General > Frameworks, Libraries, and Embedded Content)**
-<img src="./image/installation01.png" width="600" />
-<img src="./image/installation02.png" width="400" />
-<img src="./image/installation03.png" width="600" />
-<img src="./image/installation04.png" width="400" />
+<img src="./image/installation_1.png" width="600" />
+<img src="./image/installation_2.png" width="400" />
+<img src="./image/installation_3.png" width="600" />
+<img src="./image/installation_4.png" width="400" />
 
  <br />
 
