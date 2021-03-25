@@ -15,6 +15,7 @@ This is an iOS submodule for _Circle Progress Bar_. The circle progress bar can 
 * move to your xcode project file.
 * Add this submodule file in your project.
 ````
+// (필요하다면) $ git init
 $ cd (your project)
 $ git submodule add https://github.com/kimhyebeen/ios-submodule-circle-progress-bar.git
 ````
